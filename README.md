@@ -1,16 +1,16 @@
-# CodeReview AI Agent
+# AI Diyet Koçu
 
-Yapıştırılan kodun dilini otomatik tespit eden, hataları ve güvenlik açıklarını raporlayan, refactor edilmiş sürüm ve pytest/jest testleri üreten yapay zekâ ajanı.
+Gün içinde yediklerini serbest metin olarak yaz — yapay zekâ kalori hesaplar, beslenme dengesini yorumlar ve hedefine göre 7 günlük bir beslenme planı önerir.
 
 [nejdettut.com](https://www.nejdettut.com) vitrinde yer alan, Next.js 16 + Vercel AI SDK + Groq tabanlı bir uygulama.
 
 ## Teknoloji
 
-- **Next.js 16** (App Router)
-- **Vercel AI SDK** + `@ai-sdk/groq`
-- **Groq** `openai/gpt-oss-120b`
-- **Zod** şema doğrulama
-- **Tailwind CSS v4**
+- Next.js 16 (App Router)
+- Vercel AI SDK + `@ai-sdk/groq`
+- Groq `openai/gpt-oss-120b`
+- Zod schema
+- Tailwind CSS v4
 
 ## Çalıştırma
 
@@ -21,16 +21,15 @@ cp .env.example .env.local
 npm run dev
 ```
 
-`http://localhost:3000` üzerinde açılır.
-
 ## Deploy
 
-1. Bu repo'yu Vercel'e import et.
-2. Environment Variables → `GROQ_API_KEY` ekle.
-3. Yayına al.
+1. Vercel'e bu repo'yu import et.
+2. `GROQ_API_KEY` env'e ekle.
+3. Yayına al. Varsayılan: `nejdettutcom-diyet-kocu.vercel.app`. Özel: `diyet.nejdettut.com`.
 
-Varsayılan alan adı: `nejdettutcom-codereview-agent.vercel.app`.
-Özel alan: `codereview.nejdettut.com` (DNS CNAME → Vercel).
+## Uyarı
+
+Bu araç eğitim amaçlıdır; diyetisyen veya hekim önerisinin yerine geçmez.
 
 ## Lisans
 

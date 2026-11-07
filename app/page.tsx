@@ -1,4 +1,4 @@
-import { CodeReviewApp } from "@/components/codereview-app";
+import { DiyetKocuApp } from "@/components/diyet-kocu-app";
 
 export default function HomePage() {
   return (
@@ -10,25 +10,25 @@ export default function HomePage() {
           </p>
           <h1 className="mt-2 flex items-center gap-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl dark:text-slate-100">
             <span aria-hidden="true" className="text-3xl">
-              🤖
+              🍏
             </span>
-            CodeReview AI Agent
+            AI Diyet Koçu
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
-            Kodunu yapıştır — yapay zekâ hataları, güvenlik açıklarını,
-            iyileştirmeleri raporlar; refactor edilmiş sürümü ve pytest/jest
-            testlerini üretir.
+            Gün içinde yediklerini serbest metin olarak yaz — yapay zekâ
+            kalori hesaplar, beslenme dengesini yorumlar ve hedefine göre
+            7 günlük bir plan önerir.
           </p>
         </div>
         <a
-          href="https://www.nejdettut.com/projeler/codereview-ai-agent"
+          href="https://www.nejdettut.com/projeler/ai-diyet-kocu"
           className="rounded-full border border-slate-300 bg-white/70 px-4 py-2 text-xs font-medium text-slate-700 shadow-sm backdrop-blur transition hover:bg-slate-50 hover:text-slate-900 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-slate-100"
         >
           ← nejdettut.com&apos;a dön
         </a>
       </header>
 
-      <CodeReviewApp />
+      <DiyetKocuApp />
 
       <footer className="mt-20 border-t border-slate-200 pt-6 text-center text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
         Bir{" "}
@@ -38,7 +38,7 @@ export default function HomePage() {
         >
           nejdettut.com
         </a>{" "}
-        yapay zekâ projesi · Groq · Next.js
+        yapay zekâ projesi · Groq · Next.js · Eğitim amaçlıdır.
       </footer>
     </main>
   );

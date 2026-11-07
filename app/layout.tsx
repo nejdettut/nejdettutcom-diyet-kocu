@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CodeReview AI Agent — nejdettut.com",
+  title: "AI Diyet Koçu — nejdettut.com",
   description:
-    "Yapıştırdığın kodu inceleyen, hataları ve güvenlik açıklarını raporlayan, refactor ve testleri üreten yapay zekâ ajanı.",
+    "Gün içinde yenileni serbest metin olarak yaz: yapay zekâ kalori hesaplar, beslenme dengesi analizi yapar ve hedefine göre 7 günlük beslenme planı önerir.",
   robots: { index: true, follow: true },
 };
 
